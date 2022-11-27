@@ -72,7 +72,3 @@ else
     echo "  "
     echo "  Final Grade: [$GRADE/3] $PERCENTAGE%"
 fi
-
-
-
-
