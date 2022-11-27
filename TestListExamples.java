@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class TestListExamples {
 
-  @Test
+  @Test(timeout = 100)
   public void testFilter1(){
     StringChecker sc = new StringChecker(){
       public boolean checkString(String s){
@@ -29,7 +29,7 @@ public class TestListExamples {
     assertEquals(expect, result);
   }
 
-  @Test
+  @Test(timeout = 100)
   public void testFilter2(){
     StringChecker sc = new StringChecker(){
       public boolean checkString(String s){
@@ -44,7 +44,7 @@ public class TestListExamples {
     assertEquals(expect, result);
   }
 
-  @Test
+  @Test(timeout = 100)
   public void testFilter3(){
     StringChecker sc = new StringChecker(){
       public boolean checkString(String s){
@@ -67,7 +67,7 @@ public class TestListExamples {
     assertEquals(expect, result);
   }
 
-  @Test
+  @Test(timeout = 100)
   public void testMerge(){
     List<String> list1 = new ArrayList<>();
     List<String> list2 = new ArrayList<>();
