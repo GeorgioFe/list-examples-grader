@@ -30,7 +30,7 @@ then
 else
     echo "  ListExamples.java not found."
     echo "  "
-    PERCENTAGE=$(($GRADE / 3 * 100))
+    PERCENTAGE=$(($GRADE * 100 / 3))
     echo "  Final Grade: [$GRADE/3] $PERCENTAGE%"
     exit 1
 fi
@@ -45,7 +45,7 @@ then
     then
         echo "  All tests were successful. (+1 Point!)"
         ((GRADE++))
-        PERCENTAGE=$(($GRADE / 3 * 100))
+        PERCENTAGE=$(($GRADE * 100 / 3))
         echo "  "
         echo "  Feedback Report:"
         echo "  ----------------"
@@ -68,7 +68,7 @@ else
     echo "  Feedback Report:"
     echo "  ----------------"
     cat compile-err.txt
-    PERCENTAGE=$(($GRADE / 3 * 100))
+    PERCENTAGE=$(($GRADE * 100 / 3))
     echo "  "
     echo "  Final Grade: [$GRADE/3] $PERCENTAGE%"
 fi
